@@ -2,10 +2,10 @@ let userNum = +prompt(`Enter your three-digit num`, `123`);
 let userNumFirstDigit = parseInt(userNum / 100);
 let userNumSecondDigit = parseInt((userNum / 10) % 10);
 let userNumThirdDigit = userNum % 10;
-let userNumFirstAct =
-  (userNumFirstDigit + userNumSecondDigit + userNumThirdDigit) % 2;
-let userNumSecondAct =
-  (userNumFirstDigit + userNumSecondDigit + userNumThirdDigit) % 5;
+let userSumOfDigits =
+  userNumFirstDigit + userNumSecondDigit + userNumThirdDigit;
+let userNumFirstAct = sumOfDigits % 2;
+let userNumSecondAct = sumOfDigits % 5;
 let userNumThirdAct =
   userNumFirstDigit * userNumSecondDigit * userNumThirdDigit;
 
